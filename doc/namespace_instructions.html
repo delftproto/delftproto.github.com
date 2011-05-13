@@ -55,8 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Instructions Namespace Reference</div>  </div>
 </div>
@@ -70,14 +68,6 @@ The return value (if any) is pushed on the execution stack. If a mathematical fo
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ac861288830267d5dea5335dd571d34"></a><!-- doxytag: member="Instructions::FOLD_HOOD" ref="a1ac861288830267d5dea5335dd571d34" args="(Machine &amp;machine)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FOLD_HOOD</b> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4760f901c7952ba3214a7a914611d34"></a><!-- doxytag: member="Instructions::VFOLD_HOOD" ref="ab4760f901c7952ba3214a7a914611d34" args="(Machine &amp;machine)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VFOLD_HOOD</b> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab745f22299f2069de020c66e81247adb"></a><!-- doxytag: member="Instructions::FOLD_HOOD_PLUS" ref="ab745f22299f2069de020c66e81247adb" args="(Machine &amp;machine)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FOLD_HOOD_PLUS</b> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfa9c5e0b4732033cf351893ac4de484"></a><!-- doxytag: member="Instructions::VFOLD_HOOD_PLUS" ref="acfa9c5e0b4732033cf351893ac4de484" args="(Machine &amp;machine)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VFOLD_HOOD_PLUS</b> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Control flow</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#af39f76eb1f7d334d6fb34faec58d6603">DEF_VM</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the VM requirements.  <a href="#af39f76eb1f7d334d6fb34faec58d6603"></a><br/></td></tr>
@@ -287,6 +277,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>VFOLD_HOOD_PLUS</b> (
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a state variable.  <a href="#a5c9b3516689747eccd0fed96f203fbe0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#aac3278c167031edef6ce30671982c9ba">FEEDBACK</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Only here for MIT Proto compatibility, deprecated.  <a href="#aac3278c167031edef6ce30671982c9ba"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Hood instructions</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a1ac861288830267d5dea5335dd571d34">FOLD_HOOD</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fold all imported values for a specific neighbourhood variable and update the corresponding export.  <a href="#a1ac861288830267d5dea5335dd571d34"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ab4760f901c7952ba3214a7a914611d34">VFOLD_HOOD</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Only here for MIT Proto compatibility, deprecated.  <a href="#ab4760f901c7952ba3214a7a914611d34"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ab745f22299f2069de020c66e81247adb">FOLD_HOOD_PLUS</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter and fold all imported values for a specific neighbourhood variable and update the corresponding export.  <a href="#ab745f22299f2069de020c66e81247adb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#acfa9c5e0b4732033cf351893ac4de484">VFOLD_HOOD_PLUS</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Only here for MIT Proto compatibility, deprecated.  <a href="#acfa9c5e0b4732033cf351893ac4de484"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="af39f76eb1f7d334d6fb34faec58d6603"></a><!-- doxytag: member="Instructions::DEF_VM" ref="af39f76eb1f7d334d6fb34faec58d6603" args="(Machine &amp;machine)" -->
@@ -2942,6 +2941,130 @@ template&lt;int value&gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00072">72</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ac861288830267d5dea5335dd571d34"></a><!-- doxytag: member="Instructions::FOLD_HOOD" ref="a1ac861288830267d5dea5335dd571d34" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::FOLD_HOOD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fold all imported values for a specific neighbourhood variable and update the corresponding export. </p>
+<p>The fuse function is used to consecutively fuse the previous fuse result with the import value of the next neighbour. The import value from the first neighbour (ie. this machine) will be fused with the given starting value.</p>
+<p>The value of the neighbour hood variable (ie. export) of this machine is set before the folding process starts.</p>
+<p>For example, a neighbourhood with three neighbours (including this machine) is folded like this: </p>
+<div align="center">
+<img src="dot_inline_dotgraph_2.png" alt="dot_inline_dotgraph_2.png" border="0" usemap="#dot_inline_dotgraph_2.map">
+<map name="dot_inline_dotgraph_2.map" id="dot_inline_dotgraph_2.map"></map>
+</div>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>There is currently no way of doing this without using deprecated instructions. (This will be fixed soon.)</dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a></td><td>The index of the neighbourhood (ie. import/export) variable. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a></td><td>The (address of the) fuse function. (The fold function must take two parameters.) </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a></td><td>The value to start with. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a></td><td>The new export value for this <a class="el" href="class_machine.html" title="A virtual machine.">Machine</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> the result of the folding process. </dd></dl>
+
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00156">156</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4760f901c7952ba3214a7a914611d34"></a><!-- doxytag: member="Instructions::VFOLD_HOOD" ref="ab4760f901c7952ba3214a7a914611d34" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::VFOLD_HOOD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Only here for MIT Proto compatibility, deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00161">161</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab745f22299f2069de020c66e81247adb"></a><!-- doxytag: member="Instructions::FOLD_HOOD_PLUS" ref="ab745f22299f2069de020c66e81247adb" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::FOLD_HOOD_PLUS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Filter and fold all imported values for a specific neighbourhood variable and update the corresponding export. </p>
+<p>The fuse function is used to consecutively fuse the previous fuse result with result of the filter applied to the import value of the next neighbour.</p>
+<p>The value of the neighbour hood variable (ie. export) of this machine is set before the folding process starts.</p>
+<p>For example, a neighbourhood with three neighbours (including this machine) is folded like this: </p>
+<div align="center">
+<img src="dot_inline_dotgraph_3.png" alt="dot_inline_dotgraph_3.png" border="0" usemap="#dot_inline_dotgraph_3.map">
+<map name="dot_inline_dotgraph_3.map" id="dot_inline_dotgraph_3.map"></map>
+</div>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>There is currently no way of doing this without using deprecated instructions. (This will be fixed soon.)</dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a></td><td>The index of the neighbourhood (ie. import/export) variable. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a></td><td>The (address of the) fuse function. (The fold function must take two parameters.) </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a></td><td>The (address of the) filter function. (The filter function must take one parameter.) </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a></td><td>The new export value for this <a class="el" href="class_machine.html" title="A virtual machine.">Machine</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> the result of the folding process. </dd></dl>
+
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00197">197</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfa9c5e0b4732033cf351893ac4de484"></a><!-- doxytag: member="Instructions::VFOLD_HOOD_PLUS" ref="acfa9c5e0b4732033cf351893ac4de484" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::VFOLD_HOOD_PLUS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Only here for MIT Proto compatibility, deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00202">202</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
 </div>
 </div>

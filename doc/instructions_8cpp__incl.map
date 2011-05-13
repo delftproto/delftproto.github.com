@@ -8,7 +8,7 @@
 <area shape="rect" href="$tuple_8cpp.html" title="Provides the Tuple instructions." alt="" coords="592,83,736,112"/>
 <area shape="rect" href="$specialform_8cpp.html" title="Provides the special form instructions." alt="" coords="1133,83,1317,112"/>
 <area shape="rect" href="$feedback_8cpp.html" title="Provides the feedback instructions." alt="" coords="229,83,400,112"/>
-<area shape="rect" href="$hood_8cpp.html" title="Provides the fold instructions." alt="" coords="424,83,568,112"/>
+<area shape="rect" href="$hood_8cpp.html" title="Provides the hood instructions." alt="" coords="424,83,568,112"/>
 <area shape="rect" href="$machine_8hpp.html" title="Provides the Machine class." alt="" coords="835,160,931,189"/>
 <area shape="rect" href="$types_8hpp.html" title="Provides the basic numeric types." alt="" coords="1113,701,1191,731"/>
 <area shape="rect" href="$data_8hpp.html" title="Provides the Data class." alt="" coords="1036,392,1108,421"/>
