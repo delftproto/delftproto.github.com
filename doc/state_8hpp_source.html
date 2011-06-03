@@ -83,30 +83,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define __STATE_HPP</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span>
 <a name="l00021"></a>00021 <span class="preprocessor">#include &lt;<a class="code" href="data_8hpp.html" title="Provides the Data class.">data.hpp</a>&gt;</span>
-<a name="l00022"></a>00022 <span class="comment"></span>
-<a name="l00023"></a>00023 <span class="comment">/// A state variable.</span>
-<a name="l00024"></a>00024 <span class="comment"></span><span class="comment">/**</span>
-<a name="l00025"></a>00025 <span class="comment"> * \see Instructions::INIT_FEEDBACK</span>
-<a name="l00026"></a>00026 <span class="comment"> * \see Instructions::FEEDBACK</span>
-<a name="l00027"></a>00027 <span class="comment"> */</span>
-<a name="l00028"></a><a class="code" href="class_state.html">00028</a> <span class="keyword">class </span><a class="code" href="class_state.html" title="A state variable.">State</a> {
-<a name="l00029"></a>00029     <span class="keyword">public</span>:
-<a name="l00030"></a>00030         <span class="comment"></span>
-<a name="l00031"></a>00031 <span class="comment">        /// The data contained in this state variable.</span>
-<a name="l00032"></a><a class="code" href="class_state.html#a980d329be1b9f837463a5aa6299efc63">00032</a> <span class="comment"></span>        <a class="code" href="class_data.html" title="The main data type of the VM.">Data</a> <a class="code" href="class_state.html#a980d329be1b9f837463a5aa6299efc63" title="The data contained in this state variable.">data</a>;
-<a name="l00033"></a>00033         <span class="comment"></span>
-<a name="l00034"></a>00034 <span class="comment">        /// A boolean indicating wheter this state variable was used in the last round (true) or not (false).</span>
-<a name="l00035"></a>00035 <span class="comment"></span><span class="comment">        /**</span>
-<a name="l00036"></a>00036 <span class="comment">         * When a state variable is not used in a round, it is reset by the machine.</span>
-<a name="l00037"></a>00037 <span class="comment">         */</span>
-<a name="l00038"></a><a class="code" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a">00038</a>         <span class="keywordtype">bool</span> <a class="code" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a" title="A boolean indicating wheter this state variable was used in the last round (true) or not (false)...">is_executed</a>;
-<a name="l00039"></a>00039         <span class="comment"></span>
-<a name="l00040"></a>00040 <span class="comment">        /// The default constructor.</span>
-<a name="l00041"></a><a class="code" href="class_state.html#ab91bb1dd5aa6260ab2a456581daf9ec2">00041</a> <span class="comment"></span>        <a class="code" href="class_state.html#ab91bb1dd5aa6260ab2a456581daf9ec2" title="The default constructor.">State</a>() : <a class="code" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a" title="A boolean indicating wheter this state variable was used in the last round (true) or not (false)...">is_executed</a>(false) {}
-<a name="l00042"></a>00042         
-<a name="l00043"></a>00043 };
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 <span class="preprocessor">#endif</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;<a class="code" href="thread_8hpp.html" title="Provides the Thread classs.">thread.hpp</a>&gt;</span>
+<a name="l00023"></a>00023 <span class="comment"></span>
+<a name="l00024"></a>00024 <span class="comment">/// A state variable.</span>
+<a name="l00025"></a>00025 <span class="comment"></span><span class="comment">/**</span>
+<a name="l00026"></a>00026 <span class="comment"> * \see Instructions::INIT_FEEDBACK</span>
+<a name="l00027"></a>00027 <span class="comment"> * \see Instructions::FEEDBACK</span>
+<a name="l00028"></a>00028 <span class="comment"> */</span>
+<a name="l00029"></a><a class="code" href="class_state.html">00029</a> <span class="keyword">class </span><a class="code" href="class_state.html" title="A state variable.">State</a> {
+<a name="l00030"></a>00030     <span class="keyword">public</span>:
+<a name="l00031"></a>00031         <span class="comment"></span>
+<a name="l00032"></a>00032 <span class="comment">        /// The data contained in this state variable.</span>
+<a name="l00033"></a><a class="code" href="class_state.html#a980d329be1b9f837463a5aa6299efc63">00033</a> <span class="comment"></span>        <a class="code" href="class_data.html" title="The main data type of the VM.">Data</a> <a class="code" href="class_state.html#a980d329be1b9f837463a5aa6299efc63" title="The data contained in this state variable.">data</a>;
+<a name="l00034"></a>00034         <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">        /// A boolean indicating wheter this state variable was used in the last round (true) or not (false).</span>
+<a name="l00036"></a>00036 <span class="comment"></span><span class="comment">        /**</span>
+<a name="l00037"></a>00037 <span class="comment">         * When a state variable is not used in a run of the thread this state variable belongs to, it is reset by the machine.</span>
+<a name="l00038"></a>00038 <span class="comment">         */</span>
+<a name="l00039"></a><a class="code" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a">00039</a>         <span class="keywordtype">bool</span> <a class="code" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a" title="A boolean indicating wheter this state variable was used in the last round (true) or not (false)...">is_executed</a>;
+<a name="l00040"></a>00040         <span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">        /// The thread that this state variable belongs to.</span>
+<a name="l00042"></a><a class="code" href="class_state.html#a0c9dcc8abcfc9a2d802f596326996eab">00042</a> <span class="comment"></span>        <a class="code" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Thread::Id</a> <a class="code" href="class_state.html#a0c9dcc8abcfc9a2d802f596326996eab" title="The thread that this state variable belongs to.">thread</a>;
+<a name="l00043"></a>00043         <span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">        /// The default constructor.</span>
+<a name="l00045"></a><a class="code" href="class_state.html#ab91bb1dd5aa6260ab2a456581daf9ec2">00045</a> <span class="comment"></span>        <a class="code" href="class_state.html#ab91bb1dd5aa6260ab2a456581daf9ec2" title="The default constructor.">State</a>() : <a class="code" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a" title="A boolean indicating wheter this state variable was used in the last round (true) or not (false)...">is_executed</a>(false) {}
+<a name="l00046"></a>00046         
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->

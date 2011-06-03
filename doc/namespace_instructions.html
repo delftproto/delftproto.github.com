@@ -66,7 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>All instructions and their opcodes. </p>
 <p>Opcodes are declared as the name of the instruction with <code>_OP</code> appended.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd><a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a>, <a class="el" href="class_int16.html" title="A 16 bit unsigned integer (two bytes).">Int16</a> and <a class="el" href="class_i_e_e_e754binary32.html" title="An IEEE 754 binary32 floating point number representation.">IEEE754binary32</a> parameters are read from the byte(s) following the opcode. <a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a>, <a class="el" href="class_number.html" title="A floating point number.">Number</a>, <a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> and <a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> parameters are taken from the execution stack. Stack parameters should be pushed in the same order as they are listed in this documentation.</dd>
+<dl class="note"><dt><b>Note:</b></dt><dd><a class="el" href="class_int.html" title="A unsigned integer.">Int</a>, <a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a>, <a class="el" href="class_int16.html" title="A 16 bit unsigned integer (two bytes).">Int16</a> and <a class="el" href="class_i_e_e_e754binary32.html" title="An IEEE 754 binary32 floating point number representation.">IEEE754binary32</a> parameters are read from the byte(s) following the opcode. <a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a>, <a class="el" href="class_number.html" title="A floating point number.">Number</a>, <a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> and <a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> parameters are taken from the execution stack. Stack parameters should be pushed in the same order as they are listed in this documentation.</dd>
 <dd>
 The return value (if any) is pushed on the execution stack. If a mathematical formula is given in the documentation as return value, it is (obviously) a <a class="el" href="class_number.html" title="A floating point number.">Number</a>. In all other cases, the return type is explicitly described. </dd></dl>
 </div><table class="memberdecls">
@@ -75,6 +75,8 @@ Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Control flow</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#af39f76eb1f7d334d6fb34faec58d6603">DEF_VM</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the VM requirements.  <a href="#af39f76eb1f7d334d6fb34faec58d6603"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a5aaae097053b4cabc45caeec2e72c6ce">DEF_VM_EX</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the (extended) VM requirements.  <a href="#a5aaae097053b4cabc45caeec2e72c6ce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a3890972f066b2a49969f89c88630827e">EXIT</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit the installation script.  <a href="#a3890972f066b2a49969f89c88630827e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a0e290a78f1adfb600f33eac57013fa1a">RET</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
@@ -137,6 +139,15 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a function as a global.  <a href="#a8266ab799c05124f65a93e03aaadb1c3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a2b2c8f3928573ec29f759642b1a0cc2a">DEF_FUN16</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a function as a global.  <a href="#a2b2c8f3928573ec29f759642b1a0cc2a"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Threads</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ab4bbc937aa09b2b7694385dd0a542ed7">ACTIVATE</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>.  <a href="#ab4bbc937aa09b2b7694385dd0a542ed7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ad3f6de15ee037c8b80af5ccda09610b6">DEACTIVATE</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>.  <a href="#ad3f6de15ee037c8b80af5ccda09610b6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#adcd73dc0d37e29954e6b863f4732bd09">TRIGGER</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>.  <a href="#adcd73dc0d37e29954e6b863f4732bd09"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#adc289ad2859fef6827e4652a51974157">RESULT</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result of the last execution of this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>.  <a href="#adc289ad2859fef6827e4652a51974157"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Literals</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#acfff44044a7093daea924a654b25c06a">LIT8</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Literal <a class="el" href="class_number.html" title="A floating point number.">Number</a>.  <a href="#acfff44044a7093daea924a654b25c06a"></a><br/></td></tr>
@@ -316,12 +327,48 @@ Functions</h2></td></tr>
     <tr><td class="paramname"><a class="el" href="class_int16.html" title="A 16 bit unsigned integer (two bytes).">Int16</a></td><td>The number of globals. </td></tr>
     <tr><td class="paramname"><a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a></td><td>The number of state variables. </td></tr>
     <tr><td class="paramname"><a class="el" href="class_int16.html" title="A 16 bit unsigned integer (two bytes).">Int16</a></td><td>The size of the execution stack. </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a></td><td>The size of the environment stack. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int8.html" title="An 8 bit unsigned integer (byte).">Int8</a></td><td>The size of the environment stack.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Only here for MIT Proto compatibility, deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a5aaae097053b4cabc45caeec2e72c6ce">DEF_VM_EX</a> instead. </dd></dl>
+
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00040">40</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5aaae097053b4cabc45caeec2e72c6ce"></a><!-- doxytag: member="Instructions::DEF_VM_EX" ref="a5aaae097053b4cabc45caeec2e72c6ce" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::DEF_VM_EX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Define the (extended) VM requirements. </p>
+<p>This should be executed before any other instruction.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The size of the execution stack. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The size of the environment stack. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The number of globals. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The number of threads. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The number of state variables. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The number of exports. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The maximum execution depth (for instructions that execute functions, such as MAP). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00037">37</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00079">79</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +390,7 @@ Functions</h2></td></tr>
 <p>Exit the installation script. </p>
 <p>This must be the last instruction of an installation script. </p>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00063">63</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00101">101</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +418,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The return value. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00075">75</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00111">111</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +448,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The top element. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00089">89</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00125">125</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -422,7 +469,7 @@ Functions</h2></td></tr>
 
 <p>Waste clockcycles. </p>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00096">96</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00132">132</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -452,7 +499,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The 'false' value when the condition is 0, the 'true' value otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00108">108</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00144">144</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -472,9 +519,9 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a212163db973fdf649332b359e962f910">MUX</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a212163db973fdf649332b359e962f910">MUX</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00117">117</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00153">153</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -503,7 +550,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00133">133</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00169">169</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +579,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00145">145</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00181">181</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -560,7 +607,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00156">156</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00192">192</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -588,7 +635,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00166">166</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00202">202</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -787,7 +834,7 @@ template&lt;int elements&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="globals_8cpp_source.html#l00027">27</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
@@ -809,7 +856,7 @@ template&lt;int elements&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="globals_8cpp_source.html#l00032">32</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
@@ -831,7 +878,7 @@ template&lt;int elements&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="globals_8cpp_source.html#l00038">38</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
@@ -855,7 +902,7 @@ template&lt;int elements&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="globals_8cpp_source.html#l00045">45</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
@@ -877,7 +924,7 @@ template&lt;int elements&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="globals_8cpp_source.html#l00052">52</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
@@ -1052,6 +1099,118 @@ template&lt;int size&gt; </div>
 </dl>
 
 <p>Definition at line <a class="el" href="globals_8cpp_source.html#l00120">120</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4bbc937aa09b2b7694385dd0a542ed7"></a><!-- doxytag: member="Instructions::ACTIVATE" ref="ab4bbc937aa09b2b7694385dd0a542ed7" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::ACTIVATE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Activate this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="class_thread.html#acef231deeae272564174ad7f2013af4e" title="Activate this thread.">Thread::activate()</a></dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The index of the <a class="el" href="class_thread.html" title="A thread.">Thread</a> to activate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00033">33</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3f6de15ee037c8b80af5ccda09610b6"></a><!-- doxytag: member="Instructions::DEACTIVATE" ref="ad3f6de15ee037c8b80af5ccda09610b6" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::DEACTIVATE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Deactivate this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="class_thread.html#a32db3f7ecb0706027f4e4ce1a6a32684" title="Deactivate this thread.">Thread::deactivate()</a></dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The index of the <a class="el" href="class_thread.html" title="A thread.">Thread</a> to deactivate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00044">44</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcd73dc0d37e29954e6b863f4732bd09"></a><!-- doxytag: member="Instructions::TRIGGER" ref="adcd73dc0d37e29954e6b863f4732bd09" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::TRIGGER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Trigger this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="class_thread.html#aa64f826b9dada6ff4febee2aa7a87076" title="Trigger this thread.">Thread::trigger()</a></dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The index of the <a class="el" href="class_thread.html" title="A thread.">Thread</a> to trigger. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00055">55</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc289ad2859fef6827e4652a51974157"></a><!-- doxytag: member="Instructions::RESULT" ref="adc289ad2859fef6827e4652a51974157" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::RESULT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the result of the last execution of this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The index of the <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The result of the last execution of the specified <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00065">65</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
 
 </div>
 </div>
@@ -2137,7 +2296,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a355f597946b239fd9d3207578a53f5a1">FAB_TUP</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a355f597946b239fd9d3207578a53f5a1">FAB_TUP</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00066">66</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
@@ -2273,7 +2432,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a8277787f29a625217e0049030c6edb55">VEC_ADD</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a8277787f29a625217e0049030c6edb55">VEC_ADD</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00126">126</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
@@ -2295,7 +2454,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#abf57fc204fe8454334310d07c9e495c4">VEC_SUB</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#abf57fc204fe8454334310d07c9e495c4">VEC_SUB</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00139">139</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
@@ -2317,7 +2476,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a96adf50ec59dcc80fe611980d8038350">VEC_DOT</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a96adf50ec59dcc80fe611980d8038350">VEC_DOT</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00153">153</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
@@ -2339,7 +2498,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a3635fbffc37d0b39ed3a462dd78e36d9">VEC_MUL</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a3635fbffc37d0b39ed3a462dd78e36d9">VEC_MUL</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00163">163</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
@@ -2361,7 +2520,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00172">172</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
@@ -2802,7 +2961,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a5590d601f6a46aaf62e688ed36825380">TUP_MAP</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a5590d601f6a46aaf62e688ed36825380">TUP_MAP</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00101">101</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
@@ -2861,7 +3020,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a6bbfff7e3e66581ab8d5083c90358698">FOLD</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a6bbfff7e3e66581ab8d5083c90358698">FOLD</a> instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00187">187</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
@@ -2922,7 +3081,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The new value of the state variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00064">64</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00065">65</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
 
 </div>
 </div>
@@ -2942,9 +3101,9 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00072">72</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00073">73</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
 
 </div>
 </div>
@@ -2971,7 +3130,7 @@ template&lt;int value&gt; </div>
 <img src="dot_inline_dotgraph_2.png" alt="dot_inline_dotgraph_2.png" border="0" usemap="#dot_inline_dotgraph_2.map">
 <map name="dot_inline_dotgraph_2.map" id="dot_inline_dotgraph_2.map"></map>
 </div>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>There is currently no way of doing this without using deprecated instructions. (This will be fixed soon.)</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -3004,7 +3163,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="hood_8cpp_source.html#l00161">161</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
@@ -3033,7 +3192,7 @@ template&lt;int value&gt; </div>
 <img src="dot_inline_dotgraph_3.png" alt="dot_inline_dotgraph_3.png" border="0" usemap="#dot_inline_dotgraph_3.map">
 <map name="dot_inline_dotgraph_3.map" id="dot_inline_dotgraph_3.map"></map>
 </div>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>There is currently no way of doing this without using deprecated instructions. (This will be fixed soon.)</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -3066,7 +3225,7 @@ template&lt;int value&gt; </div>
 <div class="memdoc">
 
 <p>Only here for MIT Proto compatibility, deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
 <p>Definition at line <a class="el" href="hood_8cpp_source.html#l00202">202</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 

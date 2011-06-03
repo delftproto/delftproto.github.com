@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>
 <a class="el" href="namespace_instructions.html#aac3278c167031edef6ce30671982c9ba" title="Only here for MIT Proto compatibility, deprecated.">Instructions::FEEDBACK</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="state_8hpp_source.html#l00028">28</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state_8hpp_source.html#l00029">29</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
 </div>
 <p><a href="class_state-members.html">List of all members.</a></p>
 <table class="memberdecls">
@@ -88,6 +88,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The data contained in this state variable.  <a href="#a980d329be1b9f837463a5aa6299efc63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a3a15586cca2e38725ebf9c26cb69f01a">is_executed</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean indicating wheter this state variable was used in the last round (true) or not (false).  <a href="#a3a15586cca2e38725ebf9c26cb69f01a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_int8.html">Thread::Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a0c9dcc8abcfc9a2d802f596326996eab">thread</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread that this state variable belongs to.  <a href="#a0c9dcc8abcfc9a2d802f596326996eab"></a><br/></td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab91bb1dd5aa6260ab2a456581daf9ec2"></a><!-- doxytag: member="State::State" ref="ab91bb1dd5aa6260ab2a456581daf9ec2" args="()" -->
@@ -106,7 +108,7 @@ Public Attributes</h2></td></tr>
 
 <p>The default constructor. </p>
 
-<p>Definition at line <a class="el" href="state_8hpp_source.html#l00041">41</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state_8hpp_source.html#l00045">45</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
 
 </div>
 </div>
@@ -124,7 +126,7 @@ Public Attributes</h2></td></tr>
 
 <p>The data contained in this state variable. </p>
 
-<p>Definition at line <a class="el" href="state_8hpp_source.html#l00032">32</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state_8hpp_source.html#l00033">33</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
 
 </div>
 </div>
@@ -140,9 +142,26 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>A boolean indicating wheter this state variable was used in the last round (true) or not (false). </p>
-<p>When a state variable is not used in a round, it is reset by the machine. </p>
+<p>When a state variable is not used in a run of the thread this state variable belongs to, it is reset by the machine. </p>
 
-<p>Definition at line <a class="el" href="state_8hpp_source.html#l00038">38</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state_8hpp_source.html#l00039">39</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c9dcc8abcfc9a2d802f596326996eab"></a><!-- doxytag: member="State::thread" ref="a0c9dcc8abcfc9a2d802f596326996eab" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_int8.html">Thread::Id</a> <a class="el" href="class_state.html#a0c9dcc8abcfc9a2d802f596326996eab">State::thread</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The thread that this state variable belongs to. </p>
+
+<p>Definition at line <a class="el" href="state_8hpp_source.html#l00042">42</a> of file <a class="el" href="state_8hpp_source.html">state.hpp</a>.</p>
 
 </div>
 </div>

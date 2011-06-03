@@ -122,19 +122,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00058"></a>00058             <a class="code" href="class_array.html#aaed724804e8abe5f02f87464aac5cf57" title="The number of elements in the array.">array_size</a> = new_size;
 <a name="l00059"></a>00059             <span class="keywordflow">for</span>(<a class="code" href="class_size.html" title="Used to represent sizes/counts of things in memory.">Size</a> i = 0; i &lt; <a class="code" href="class_array.html#aaed724804e8abe5f02f87464aac5cf57" title="The number of elements in the array.">array_size</a>; i++) <span class="keyword">new</span> (&amp;<a class="code" href="class_array.html#a3d58a23fc98649a6de705e09737f0f7b" title="A pointer to the first element.">array</a>[i]) Element();
 <a name="l00060"></a>00060         }
-<a name="l00061"></a>00061         
-<a name="l00062"></a><a class="code" href="class_array.html#a5368845fdf6b7aa60e77e18a73ae7ed8">00062</a>         <span class="keyword">inline</span> <a class="code" href="class_array.html#a5368845fdf6b7aa60e77e18a73ae7ed8" title="Access the elements of the Array.">operator Element       * </a>()       { <span class="keywordflow">return</span> <a class="code" href="class_array.html#a3d58a23fc98649a6de705e09737f0f7b" title="A pointer to the first element.">array</a>; } <span class="comment">///&lt; Access the elements of the Array.</span>
-<a name="l00063"></a><a class="code" href="class_array.html#a310f2759e012a078cc10c517b0d06fa8">00063</a> <span class="comment"></span>        <span class="keyword">inline</span> <a class="code" href="class_array.html#a310f2759e012a078cc10c517b0d06fa8" title="Constant access to the elements of the Array.">operator Element const * </a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_array.html#a3d58a23fc98649a6de705e09737f0f7b" title="A pointer to the first element.">array</a>; } <span class="comment">///&lt; Constant access to the elements of the Array. </span>
-<a name="l00064"></a>00064 <span class="comment"></span>        <span class="comment"></span>
-<a name="l00065"></a>00065 <span class="comment">        /// The number of elements in the array.</span>
-<a name="l00066"></a><a class="code" href="class_array.html#a62f4bbd00e634c062c1601a3b4aa7d6e">00066</a> <span class="comment"></span>        <span class="keyword">inline</span> <a class="code" href="class_size.html" title="Used to represent sizes/counts of things in memory.">Size</a> <a class="code" href="class_array.html#a62f4bbd00e634c062c1601a3b4aa7d6e" title="The number of elements in the array.">size</a>() { <span class="keywordflow">return</span> <a class="code" href="class_array.html#aaed724804e8abe5f02f87464aac5cf57" title="The number of elements in the array.">array_size</a>; }
-<a name="l00067"></a>00067         <span class="comment"></span>
-<a name="l00068"></a>00068 <span class="comment">        /// Deconstruct the elements and deallocate the array.</span>
-<a name="l00069"></a><a class="code" href="class_array.html#a1848224efe9b7b28078f3d3ef3e8722b">00069</a> <span class="comment"></span>        <span class="keyword">inline</span> <a class="code" href="class_array.html#a1848224efe9b7b28078f3d3ef3e8722b" title="Deconstruct the elements and deallocate the array.">~Array</a>() { <a class="code" href="class_array.html#a644f7030fd4decc526d3e5e9447a4844" title="Reset the array.">reset</a>(); }
-<a name="l00070"></a>00070         
-<a name="l00071"></a>00071 };
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073 <span class="preprocessor">#endif</span>
+<a name="l00061"></a>00061         <span class="comment"></span>
+<a name="l00062"></a>00062 <span class="comment">        /// Clear the array.</span>
+<a name="l00063"></a>00063 <span class="comment"></span><span class="comment">        /**</span>
+<a name="l00064"></a>00064 <span class="comment">         * All elements will be reset to their default value.</span>
+<a name="l00065"></a>00065 <span class="comment">         */</span>
+<a name="l00066"></a><a class="code" href="class_array.html#a70dc0373c4e8f436cc5fec0598884860">00066</a>         <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_array.html#a70dc0373c4e8f436cc5fec0598884860" title="Clear the array.">clear</a>() {
+<a name="l00067"></a>00067             <span class="keywordflow">for</span>(<a class="code" href="class_size.html" title="Used to represent sizes/counts of things in memory.">Size</a> i = 0; i &lt; <a class="code" href="class_array.html#aaed724804e8abe5f02f87464aac5cf57" title="The number of elements in the array.">array_size</a>; i++) <a class="code" href="class_array.html#a3d58a23fc98649a6de705e09737f0f7b" title="A pointer to the first element.">array</a>[i] = Element();
+<a name="l00068"></a>00068         }
+<a name="l00069"></a>00069         
+<a name="l00070"></a><a class="code" href="class_array.html#a5368845fdf6b7aa60e77e18a73ae7ed8">00070</a>         <span class="keyword">inline</span> <a class="code" href="class_array.html#a5368845fdf6b7aa60e77e18a73ae7ed8" title="Access the elements of the Array.">operator Element       * </a>()       { <span class="keywordflow">return</span> <a class="code" href="class_array.html#a3d58a23fc98649a6de705e09737f0f7b" title="A pointer to the first element.">array</a>; } <span class="comment">///&lt; Access the elements of the Array.</span>
+<a name="l00071"></a><a class="code" href="class_array.html#a310f2759e012a078cc10c517b0d06fa8">00071</a> <span class="comment"></span>        <span class="keyword">inline</span> <a class="code" href="class_array.html#a310f2759e012a078cc10c517b0d06fa8" title="Constant access to the elements of the Array.">operator Element const * </a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_array.html#a3d58a23fc98649a6de705e09737f0f7b" title="A pointer to the first element.">array</a>; } <span class="comment">///&lt; Constant access to the elements of the Array. </span>
+<a name="l00072"></a>00072 <span class="comment"></span>        <span class="comment"></span>
+<a name="l00073"></a>00073 <span class="comment">        /// The number of elements in the array.</span>
+<a name="l00074"></a><a class="code" href="class_array.html#a62f4bbd00e634c062c1601a3b4aa7d6e">00074</a> <span class="comment"></span>        <span class="keyword">inline</span> <a class="code" href="class_size.html" title="Used to represent sizes/counts of things in memory.">Size</a> <a class="code" href="class_array.html#a62f4bbd00e634c062c1601a3b4aa7d6e" title="The number of elements in the array.">size</a>() { <span class="keywordflow">return</span> <a class="code" href="class_array.html#aaed724804e8abe5f02f87464aac5cf57" title="The number of elements in the array.">array_size</a>; }
+<a name="l00075"></a>00075         <span class="comment"></span>
+<a name="l00076"></a>00076 <span class="comment">        /// Deconstruct the elements and deallocate the array.</span>
+<a name="l00077"></a><a class="code" href="class_array.html#a1848224efe9b7b28078f3d3ef3e8722b">00077</a> <span class="comment"></span>        <span class="keyword">inline</span> <a class="code" href="class_array.html#a1848224efe9b7b28078f3d3ef3e8722b" title="Deconstruct the elements and deallocate the array.">~Array</a>() { <a class="code" href="class_array.html#a644f7030fd4decc526d3e5e9447a4844" title="Reset the array.">reset</a>(); }
+<a name="l00078"></a>00078         
+<a name="l00079"></a>00079 };
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
