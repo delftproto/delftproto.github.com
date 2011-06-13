@@ -137,6 +137,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback stack.  <a href="#a68894a010a9100f73e42eed2988bec11"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">NeighbourHood::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_machine.html#a9e9238de6844962bc6bdbb70c62e7c47">current_neighbour</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The current neighbour, when iterating through them.  <a href="#a9e9238de6844962bc6bdbb70c62e7c47"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_machine.html#a6b569262c98a1b351056b003cc3eaaab">current_import</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The (index of the) current import/export, when executing a hood instruction.  <a href="#a6b569262c98a1b351056b003cc3eaaab"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeafce3e1f853eab377c4c0ed22236c81"></a><!-- doxytag: member="Machine::Instructions::DEF_VM" ref="aeafce3e1f853eab377c4c0ed22236c81" args="(Machine &amp;)" -->
@@ -175,7 +177,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 
 <p>The constructor. </p>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00102">102</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00108">108</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -204,7 +206,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00113">113</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00119">119</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +227,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Start the next scheduled task. </p>
 <dl class="note"><dt><b>Note:</b></dt><dd>This does not execute Proto code, it only prepares the next run. Call <a class="el" href="class_machine.html#a265085dd37ece6b08a3fa3b41414ff62" title="Execute the next instruction.">step()</a> while not <a class="el" href="class_machine.html#a5409d7dae8461d62dffd062a41623592" title="Check whether the running script (installation or a single run) has finished (true) or not (false)...">finished()</a> to execute it. </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00123">123</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00129">129</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +248,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Execute the next instruction. </p>
 <dl class="note"><dt><b>Note:</b></dt><dd>Do not use this function when already <a class="el" href="class_machine.html#a5409d7dae8461d62dffd062a41623592" title="Check whether the running script (installation or a single run) has finished (true) or not (false)...">finished()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00156">156</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00162">162</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +268,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 
 <p>Check whether the running script (installation or a single run) has finished (true) or not (false). </p>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00161">161</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00167">167</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +295,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00174">174</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00180">180</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +322,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00182">182</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00188">188</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +360,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00191">191</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00197">197</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +382,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>If the corresponding call (if any) registered a callback, it will be called.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespace_instructions.html#a0e290a78f1adfb600f33eac57013fa1a" title="Return from a function.">Instructions::RET</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00203">203</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00209">209</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -400,7 +402,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 
 <p>Get the current address (instruction pointer). </p>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00212">212</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00218">218</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -421,7 +423,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Get the callback depth. </p>
 <p>Usually 1, but higher inside instructions such as <a class="el" href="namespace_instructions.html#afc154ab16dd30e0860866d75823be509">INIT_FEEDBACK</a> or <a class="el" href="namespace_instructions.html#a5590d601f6a46aaf62e688ed36825380">TUP_MAP</a>. </p>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00220">220</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00226">226</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +445,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Using the Variable Length Quantity (VLQ) format as used in the MIDI file format.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://en.wikipedia.org/wiki/Variable-length_quantity">http://en.wikipedia.org/wiki/Variable-length_quantity</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00236">236</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00242">242</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +466,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Read the next byte as an unsigned 8-bit integer. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_machine.html#aae3ae0f475408a059107fc648dedef3e" title="Read the next byte(s) as an unsigned integer.">nextInt()</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00251">251</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00257">257</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -485,7 +487,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Read the next two bytes as an unsigned 16-bit integer (big endian). </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_machine.html#aae3ae0f475408a059107fc648dedef3e" title="Read the next byte(s) as an unsigned integer.">nextInt()</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00259">259</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00265">265</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -513,7 +515,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 </dl>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="namespace_instructions.html" title="All instructions and their opcodes.">Instructions</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00271">271</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00277">277</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +536,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Get the current neighbour, when iterating through them. </p>
 <p>Used by the hood instructions when iterating through the hood to let the neighbour-instructions know which neighbour is currently being processed. </p>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00284">284</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00290">290</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +556,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 
 <p>Get the <a class="el" href="class_neighbour.html" title="A node in the neighbourhood.">Neighbour</a> representing this machine. </p>
 
-<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00289">289</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00295">295</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
@@ -766,6 +768,24 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_callback</
 <p>Used by the hood instructions when iterating through the hood to let the neighbour-instructions know which neighbour is currently being processed. </p>
 
 <p>Definition at line <a class="el" href="machine_8hpp_source.html#l00090">90</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b569262c98a1b351056b003cc3eaaab"></a><!-- doxytag: member="Machine::current_import" ref="a6b569262c98a1b351056b003cc3eaaab" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_size.html">Size</a> <a class="el" href="class_machine.html#a6b569262c98a1b351056b003cc3eaaab">Machine::current_import</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The (index of the) current import/export, when executing a hood instruction. </p>
+<p>Used by the hood folding instructions. </p>
+
+<p>Definition at line <a class="el" href="machine_8hpp_source.html#l00096">96</a> of file <a class="el" href="machine_8hpp_source.html">machine.hpp</a>.</p>
 
 </div>
 </div>
