@@ -1,6 +1,6 @@
 .PHONY: update update-origin clean
 
-repository := git://git@github.com/delftproto/delftproto.git
+repository := git://github.com/delftproto/delftproto.git
 
 update:
 	if [ ! -d git ]; then mkdir git && git clone $(repository) git; else cd git && git pull && cd ..; fi
