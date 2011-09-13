@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$memory_8hpp.html" title="Provides the Memory class." alt="" coords="15,237,108,267"/>
-<area shape="rect" href="$types_8hpp.html" title="Provides the basic numeric types." alt="" coords="169,315,247,344"/>
-<area shape="rect" href="$tuple_8hpp.html" title="Provides the Tuple class." alt="" coords="133,83,208,112"/>
-<area shape="rect" href="$address_8hpp.html" title="Provides the Address class." alt="" coords="227,160,317,189"/>
-<area shape="rect" href="$stack_8hpp.html" title="Provides the Stack class." alt="" coords="32,83,109,112"/>
-<area shape="rect" href="$sharedvector_8hpp.html" title="Provides the SharedVector class." alt="" coords="83,160,203,189"/>
-</map>
