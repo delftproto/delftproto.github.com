@@ -91,6 +91,11 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jump to another address.  <a href="#a6b433f777802a63ed362e7460e5583b5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#aa0069d91d3fe550f15532a6bda1a7af0">JMP16</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jump to another address.  <a href="#aa0069d91d3fe550f15532a6bda1a7af0"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;int arguments&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a7b217aaaa63b806b11c55a30e897b6c6">FUNCALL_N</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function.  <a href="#a7b217aaaa63b806b11c55a30e897b6c6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ab63a0d8088d6788337613facc8a9a3ac">FUNCALL</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function.  <a href="#ab63a0d8088d6788337613facc8a9a3ac"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Environment stack</div></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;int index&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ad52122aeb7c42d2e12c16acb18d0c8dd">REF_N</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
@@ -134,6 +139,10 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a2b2c8f3928573ec29f759642b1a0cc2a">DEF_FUN16</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a function as a global.  <a href="#a2b2c8f3928573ec29f759642b1a0cc2a"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Threads</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a1a77b2353cfdc3b8a89c2ac960a0baa4">DT</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time between this and the previous execution of this thread.  <a href="#a1a77b2353cfdc3b8a89c2ac960a0baa4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a2d968d1dabd134098e5680d1c0fb322b">SET_DT</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the desired period of a thread.  <a href="#a2d968d1dabd134098e5680d1c0fb322b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ab4bbc937aa09b2b7694385dd0a542ed7">ACTIVATE</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate this or another <a class="el" href="class_thread.html" title="A thread.">Thread</a>.  <a href="#ab4bbc937aa09b2b7694385dd0a542ed7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ad3f6de15ee037c8b80af5ccda09610b6">DEACTIVATE</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
@@ -171,6 +180,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a <a class="el" href="class_number.html" title="A floating point number.">Number</a> is greater than another.  <a href="#af925feba8c822e861b1f357071502be2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a0cdd52e4aca18586c48793031e7ddb09">GTE</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a <a class="el" href="class_number.html" title="A floating point number.">Number</a> is greater than or equal to another.  <a href="#a0cdd52e4aca18586c48793031e7ddb09"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a1d80876fac7c24551d8cb4344c8bfe0e">NOT</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inverse boolean value of a <a class="el" href="class_number.html" title="A floating point number.">Number</a>.  <a href="#a1d80876fac7c24551d8cb4344c8bfe0e"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Standard math operator instructions</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#af2d7bc6ac5ea4bb5b25dfd54e5ebe32e">ADD</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_number.html" title="A floating point number.">Number</a> to another.  <a href="#af2d7bc6ac5ea4bb5b25dfd54e5ebe32e"></a><br/></td></tr>
@@ -197,6 +208,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the floor of a <a class="el" href="class_number.html" title="A floating point number.">Number</a>.  <a href="#a6dbe37a73e257779f9d21260fb34bc7d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a4565973069d95d5a6fc470160c461132">CEIL</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ceiling of a <a class="el" href="class_number.html" title="A floating point number.">Number</a>.  <a href="#a4565973069d95d5a6fc470160c461132"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ac8facadcc4c87be8e5b2d98d2cc630a2">ROUND</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Round a <a class="el" href="class_number.html" title="A floating point number.">Number</a>.  <a href="#ac8facadcc4c87be8e5b2d98d2cc630a2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a33d15bc901660303dc346beb2908a170">LOG</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the natural logarithm of a <a class="el" href="class_number.html" title="A floating point number.">Number</a>.  <a href="#a33d15bc901660303dc346beb2908a170"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a8cb97d6371769b4c893dc5e6908e437d">SQRT</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
@@ -289,6 +302,8 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#aac3278c167031edef6ce30671982c9ba">FEEDBACK</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Only here for MIT Proto compatibility, deprecated.  <a href="#aac3278c167031edef6ce30671982c9ba"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Hood instructions</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a2ff6a877db25fa873a0e84e1db8b8ce5">MID</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of this machine.  <a href="#a2ff6a877db25fa873a0e84e1db8b8ce5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#a1ac861288830267d5dea5335dd571d34">FOLD_HOOD</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fold all imported values for a specific neighbourhood variable and update the corresponding export.  <a href="#a1ac861288830267d5dea5335dd571d34"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_instructions.html#ab4760f901c7952ba3214a7a914611d34">VFOLD_HOOD</a> (<a class="el" href="class_machine.html">Machine</a> &amp;machine)</td></tr>
@@ -330,7 +345,7 @@ Functions</h2></td></tr>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a5aaae097053b4cabc45caeec2e72c6ce">DEF_VM_EX</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00040">40</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00036">36</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +379,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00079">79</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00075">75</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +401,7 @@ Functions</h2></td></tr>
 <p>Exit the installation script. </p>
 <p>This must be the last instruction of an installation script. </p>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00101">101</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00097">97</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -414,7 +429,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The return value. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00111">111</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00107">107</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -444,7 +459,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The top element. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00125">125</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00121">121</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -465,7 +480,7 @@ Functions</h2></td></tr>
 
 <p>Waste clockcycles. </p>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00132">132</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00128">128</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -495,7 +510,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The 'false' value when the condition is 0, the 'true' value otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00144">144</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00140">140</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +532,7 @@ Functions</h2></td></tr>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a212163db973fdf649332b359e962f910">MUX</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00153">153</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00149">149</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -546,7 +561,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00169">169</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00165">165</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +592,7 @@ Functions</h2></td></tr>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#ac627da07c6ad73f0cfaa3e6e58b4abd2">IF</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00184">184</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00180">180</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +620,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00196">196</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00192">192</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +650,69 @@ Functions</h2></td></tr>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a6b433f777802a63ed362e7460e5583b5">JMP</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00209">209</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00205">205</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b217aaaa63b806b11c55a30e897b6c6"></a><!-- doxytag: member="Instructions::FUNCALL_N" ref="a7b217aaaa63b806b11c55a30e897b6c6" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int arguments&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::FUNCALL_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Call a function. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The number of arguments to pass to the function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a></td><td><code>[n]</code> The arguments. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a></td><td>The address of the function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The return value of the function. </dd></dl>
+
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00229">229</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab63a0d8088d6788337613facc8a9a3ac"></a><!-- doxytag: member="Instructions::FUNCALL" ref="ab63a0d8088d6788337613facc8a9a3ac" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::FUNCALL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Call a function. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_int.html" title="A unsigned integer.">Int</a></td><td>The number of arguments to pass to the function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a></td><td><code>[n]</code> The arguments. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_address.html" title="An address of a constant series of bytes in memory.">Address</a></td><td>The address of the function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The return value of the function. </dd></dl>
+
+<p>Definition at line <a class="el" href="flow_8cpp_source.html#l00246">246</a> of file <a class="el" href="flow_8cpp_source.html">flow.cpp</a>.</p>
 
 </div>
 </div>
@@ -665,7 +742,7 @@ template&lt;int index&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The element. </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00032">32</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00028">28</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
 
 </div>
 </div>
@@ -693,7 +770,7 @@ template&lt;int index&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The element. </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00041">41</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00037">37</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
 
 </div>
 </div>
@@ -729,7 +806,7 @@ template&lt;int elements&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00054">54</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00050">50</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
 
 </div>
 </div>
@@ -758,7 +835,7 @@ template&lt;int elements&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00066">66</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00062">62</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
 
 </div>
 </div>
@@ -787,7 +864,7 @@ template&lt;int elements&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00077">77</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00073">73</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
 
 </div>
 </div>
@@ -814,7 +891,7 @@ template&lt;int elements&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00085">85</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cpp_source.html#l00081">81</a> of file <a class="el" href="environment_8cpp_source.html">environment.cpp</a>.</p>
 
 </div>
 </div>
@@ -836,7 +913,7 @@ template&lt;int elements&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00027">27</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00023">23</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -858,7 +935,7 @@ template&lt;int elements&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00032">32</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00028">28</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -880,7 +957,7 @@ template&lt;int elements&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00038">38</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00034">34</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -904,7 +981,7 @@ template&lt;int elements&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00045">45</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00041">41</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -926,7 +1003,7 @@ template&lt;int elements&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00052">52</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00048">48</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +1033,7 @@ template&lt;int index&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The value of the global variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00063">63</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00059">59</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1061,7 @@ template&lt;int index&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The value of the global variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00072">72</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00068">68</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1091,7 @@ template&lt;int index&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a37e628b7409e191615b2df243489bfc0">GLO_REF</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00085">85</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00081">81</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +1121,7 @@ template&lt;int size&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00099">99</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00095">95</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1149,7 @@ template&lt;int size&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00111">111</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00107">107</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1179,53 @@ template&lt;int size&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a8266ab799c05124f65a93e03aaadb1c3">DEF_FUN</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00127">127</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="globals_8cpp_source.html#l00123">123</a> of file <a class="el" href="globals_8cpp_source.html">globals.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a77b2353cfdc3b8a89c2ac960a0baa4"></a><!-- doxytag: member="Instructions::DT" ref="a1a77b2353cfdc3b8a89c2ac960a0baa4" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::DT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the time between this and the previous execution of this thread. </p>
+<p>If this is the first run, the desired period will be given instead.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> The time, in seconds, since the last run of this thread. </dd></dl>
+
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00028">28</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d968d1dabd134098e5680d1c0fb322b"></a><!-- doxytag: member="Instructions::SET_DT" ref="a2d968d1dabd134098e5680d1c0fb322b" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::SET_DT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the desired period of a thread. </p>
+<p>Set the minimum period for this thread.</p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Currently, the scheduler ignores this setting. </dd></dl>
+
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00044">44</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1253,7 @@ template&lt;int size&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00033">33</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00056">56</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1281,7 @@ template&lt;int size&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00044">44</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00067">67</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1309,7 @@ template&lt;int size&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00055">55</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00078">78</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1337,7 @@ template&lt;int size&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The result of the last execution of the specified <a class="el" href="class_thread.html" title="A thread.">Thread</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00065">65</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
+<p>Definition at line <a class="el" href="threads_8cpp_source.html#l00088">88</a> of file <a class="el" href="threads_8cpp_source.html">threads.cpp</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1365,7 @@ template&lt;int size&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The value as a <a class="el" href="class_number.html" title="A floating point number.">Number</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00033">33</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00029">29</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1395,7 @@ template&lt;int size&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a9a700bb87285dddaa4b8bf59ddcfc188">LIT</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00046">46</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00042">42</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1302,7 +1425,7 @@ template&lt;int size&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a9a700bb87285dddaa4b8bf59ddcfc188">LIT</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00057">57</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00053">53</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1455,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The value as a <a class="el" href="class_number.html" title="A floating point number.">Number</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00068">68</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00064">64</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1483,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The value as a <a class="el" href="class_number.html" title="A floating point number.">Number</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00077">77</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00073">73</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1505,7 @@ template&lt;int value&gt; </div>
 <p>Positive infinity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle +\infty$" src="form_0.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00090">90</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00086">86</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1404,7 +1527,7 @@ template&lt;int value&gt; </div>
 <p>Negative infinity. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle -\infty$" src="form_1.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00099">99</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
+<p>Definition at line <a class="el" href="literals_8cpp_source.html#l00095">95</a> of file <a class="el" href="literals_8cpp_source.html">literals.cpp</a>.</p>
 
 </div>
 </div>
@@ -1433,7 +1556,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a=b\\0&amp;a\neq b\end{array}\right.$" src="form_4.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00034">34</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00030">30</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1585,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a\neq b\\0&amp;a=b\end{array}\right.$" src="form_5.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00047">47</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00043">43</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1491,7 +1614,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a<b\\0&amp;a\geq b\end{array}\right.$" src="form_6.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00060">60</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00056">56</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1643,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a\leq b\\0&amp;a>b\end{array}\right.$" src="form_7.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00072">72</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00068">68</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1549,7 +1672,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a>b\\0&amp;a\leq b\end{array}\right.$" src="form_8.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00084">84</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00080">80</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1578,7 +1701,35 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a\geq b\\0&amp;a<b\end{array}\right.$" src="form_9.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00096">96</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00092">92</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d80876fac7c24551d8cb4344c8bfe0e"></a><!-- doxytag: member="Instructions::NOT" ref="a1d80876fac7c24551d8cb4344c8bfe0e" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::NOT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the inverse boolean value of a <a class="el" href="class_number.html" title="A floating point number.">Number</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle a$" src="form_2.png"/> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lbrace\begin{array}{ll}1&amp;a=0\\0&amp;a\neq0\end{array}\right.$" src="form_10.png"/> </dd></dl>
+
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00103">103</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1605,9 +1756,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a + b$" src="form_10.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a + b$" src="form_11.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00113">113</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00119">119</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1634,9 +1785,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a - b$" src="form_11.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a - b$" src="form_12.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00125">125</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00131">131</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1663,9 +1814,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a \cdot b$" src="form_12.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a \cdot b$" src="form_13.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00137">137</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00143">143</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1692,9 +1843,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \frac a b$" src="form_13.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \frac a b$" src="form_14.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00149">149</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00155">155</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1720,9 +1871,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle |a|$" src="form_14.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle |a|$" src="form_15.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00165">165</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00171">171</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1749,9 +1900,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \max\lbrace a,b\rbrace$" src="form_15.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \max\lbrace a,b\rbrace$" src="form_16.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00176">176</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00182">182</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1778,9 +1929,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \min\lbrace a,b\rbrace$" src="form_16.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \min\lbrace a,b\rbrace$" src="form_17.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00188">188</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00194">194</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1807,9 +1958,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a^b$" src="form_17.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle a^b$" src="form_18.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00200">200</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00206">206</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1836,9 +1987,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle x \equiv a \pmod{|b|},\quad \left\lbrace\begin{array}{ll} -|b| < x \leq 0 &amp; a < 0 \\ 0 \leq x < |b| &amp; a \geq 0 \end{array}\right.$" src="form_18.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle x \equiv a \pmod{|b|},\quad \left\lbrace\begin{array}{ll} -|b| < x \leq 0 &amp; a < 0 \\ 0 \leq x < |b| &amp; a \geq 0 \end{array}\right.$" src="form_19.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00213">213</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00218">218</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1865,9 +2016,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle x \equiv a \pmod{|b|},\quad 0 \leq x < |b|$" src="form_19.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle x \equiv a \pmod{|b|},\quad 0 \leq x < |b|$" src="form_20.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00226">226</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00230">230</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1893,9 +2044,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lfloor a \right\rfloor$" src="form_20.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lfloor a \right\rfloor$" src="form_21.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00239">239</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00243">243</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1921,9 +2072,37 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lceil a \right\rceil$" src="form_21.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lceil a \right\rceil$" src="form_22.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00249">249</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00253">253</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8facadcc4c87be8e5b2d98d2cc630a2"></a><!-- doxytag: member="Instructions::ROUND" ref="ac8facadcc4c87be8e5b2d98d2cc630a2" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::ROUND </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Round a <a class="el" href="class_number.html" title="A floating point number.">Number</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle a$" src="form_2.png"/> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \left\lfloor a + \frac12 \right\rfloor$" src="form_23.png"/> </dd></dl>
+
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00263">263</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1949,9 +2128,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \log_e a$" src="form_22.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \log_e a$" src="form_24.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00259">259</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00273">273</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -1977,9 +2156,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \sqrt a$" src="form_23.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \sqrt a$" src="form_25.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00269">269</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00283">283</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2005,9 +2184,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \sin a$" src="form_24.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \sin a$" src="form_26.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00279">279</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00293">293</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2033,9 +2212,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \cos a$" src="form_25.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \cos a$" src="form_27.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00289">289</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00303">303</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2061,9 +2240,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \tan a$" src="form_26.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \tan a$" src="form_28.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00299">299</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00313">313</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2089,9 +2268,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \sinh a$" src="form_27.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \sinh a$" src="form_29.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00309">309</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00323">323</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2117,9 +2296,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \cosh a$" src="form_28.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \cosh a$" src="form_30.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00319">319</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00333">333</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2145,9 +2324,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \tanh a$" src="form_29.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \tanh a$" src="form_31.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00329">329</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00343">343</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2173,9 +2352,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \arcsin a$" src="form_30.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \arcsin a$" src="form_32.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00339">339</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00353">353</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2201,9 +2380,9 @@ template&lt;int value&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \arccos a$" src="form_31.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \arccos a$" src="form_33.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00349">349</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00363">363</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2225,14 +2404,14 @@ template&lt;int value&gt; </div>
 <p>Calculate the angle of a tangent. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle y$" src="form_32.png"/> </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle x$" src="form_33.png"/> </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle y$" src="form_34.png"/> </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle x$" src="form_35.png"/> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \arctan \frac y x$" src="form_34.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle \arctan \frac y x$" src="form_36.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00360">360</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00374">374</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2254,14 +2433,14 @@ template&lt;int value&gt; </div>
 <p>Generate a (pseudo) random number. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle min$" src="form_35.png"/> </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle max$" src="form_36.png"/> </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle min$" src="form_37.png"/> </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_number.html" title="A floating point number.">Number</a></td><td><img class="formulaInl" alt="$\displaystyle max$" src="form_38.png"/> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle x \sim U(min,max)$" src="form_37.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><img class="formulaInl" alt="$\displaystyle x \sim U(min,max)$" src="form_39.png"/> </dd></dl>
 
-<p>Definition at line <a class="el" href="math_8cpp_source.html#l00372">372</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
+<p>Definition at line <a class="el" href="math_8cpp_source.html#l00386">386</a> of file <a class="el" href="math_8cpp_source.html">math.cpp</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2469,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The element. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00050">50</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00046">46</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2312,7 +2491,7 @@ template&lt;int value&gt; </div>
 <p>An empty tuple. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> An empty tuple. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00060">60</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00056">56</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2334,7 +2513,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a355f597946b239fd9d3207578a53f5a1">FAB_TUP</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00066">66</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00062">62</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2363,7 +2542,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> A tuple containing the elements. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00081">81</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00077">77</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2392,7 +2571,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> A tuple filled with the specified element. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00095">95</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00091">91</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2420,7 +2599,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> A tuple filled with zero's. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00108">108</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00104">104</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2448,7 +2627,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> The number of elements in the tuple. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00120">120</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00116">116</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2470,7 +2649,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a8277787f29a625217e0049030c6edb55">VEC_ADD</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00126">126</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00122">122</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2492,7 +2671,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#abf57fc204fe8454334310d07c9e495c4">VEC_SUB</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00139">139</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00135">135</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2514,7 +2693,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a96adf50ec59dcc80fe611980d8038350">VEC_DOT</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00153">153</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00149">149</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2536,7 +2715,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a3635fbffc37d0b39ed3a462dd78e36d9">VEC_MUL</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00163">163</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00159">159</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2558,7 +2737,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00172">172</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00168">168</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2588,7 +2767,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> The result of an element wise addition.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00194">194</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00190">190</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2618,7 +2797,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> The result of an element wise subtraction.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00215">215</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00211">211</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2648,7 +2827,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> The result of the dot product.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00237">237</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00233">233</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2678,7 +2857,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> The result of an element wise multiplication.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00255">255</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00251">251</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2708,7 +2887,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> 1 when the elements in the tuples are equal, 0 otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00273">273</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00269">269</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2738,7 +2917,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> 0 when the elements in the tuples are equal, 1 otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00287">287</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00283">283</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2768,7 +2947,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> 1 when when the first tuple is lexicographical less than the second, 0 otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00301">301</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00297">297</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2798,7 +2977,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> 1 when when the first tuple is lexicographical less than or equal to the second, 0 otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00314">314</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00310">310</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2828,7 +3007,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> 1 when when the first tuple is lexicographical greater than the second, 0 otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00327">327</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00323">323</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2858,7 +3037,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> 1 when when the first tuple is lexicographical greater than or equal to the second, 0 otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00340">340</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00336">336</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2888,7 +3067,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> The first tuple when when that tuple is lexicographical less than or equal to the other, the second one otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00353">353</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00349">349</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2918,7 +3097,7 @@ template&lt;int value&gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> The first tuple when when that tuple is lexicographical greater than or equal to the other, the second one otherwise.</dd></dl>
 <p>If one of the tuples is shorter, the remaining of the elements will be interpreted as 0. </p>
 
-<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00368">368</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tuple_8cpp_source.html#l00364">364</a> of file <a class="el" href="tuple_8cpp_source.html">tuple.cpp</a>.</p>
 
 </div>
 </div>
@@ -2947,7 +3126,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The return value of the function. </dd></dl>
 
-<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00043">43</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
+<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00039">39</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
 </div>
 </div>
@@ -2977,7 +3156,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_tuple.html" title="A SharedVector of Data.">Tuple</a> The tuple with all the mapped elements. </dd></dl>
 
-<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00080">80</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
+<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00076">76</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
 </div>
 </div>
@@ -2999,7 +3178,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a5590d601f6a46aaf62e688ed36825380">TUP_MAP</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00096">96</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
+<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00092">92</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
 </div>
 </div>
@@ -3036,7 +3215,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The result of the folding process. </dd></dl>
 
-<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00149">149</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
+<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00145">145</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
 </div>
 </div>
@@ -3058,7 +3237,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. New scripts should use the similar <a class="el" href="namespace_instructions.html#a6bbfff7e3e66581ab8d5083c90358698">FOLD</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00167">167</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
+<p>Definition at line <a class="el" href="specialform_8cpp_source.html#l00163">163</a> of file <a class="el" href="specialform_8cpp_source.html">specialform.cpp</a>.</p>
 
 </div>
 </div>
@@ -3088,7 +3267,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The value of the state variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00044">44</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00041">41</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
 
 </div>
 </div>
@@ -3117,7 +3296,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> The new value of the state variable. </dd></dl>
 
-<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00065">65</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00062">62</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
 
 </div>
 </div>
@@ -3139,7 +3318,29 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00073">73</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+<p>Definition at line <a class="el" href="feedback_8cpp_source.html#l00070">70</a> of file <a class="el" href="feedback_8cpp_source.html">feedback.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ff6a877db25fa873a0e84e1db8b8ce5"></a><!-- doxytag: member="Instructions::MID" ref="a2ff6a877db25fa873a0e84e1db8b8ce5" args="(Machine &amp;machine)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Instructions::MID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_machine.html">Machine</a> &amp;&#160;</td>
+          <td class="paramname"><em>machine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the ID of this machine. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_number.html" title="A floating point number.">Number</a> The (unique) ID of this machine. </dd></dl>
+
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00107">107</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
 </div>
 </div>
@@ -3179,7 +3380,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> the result of the folding process. </dd></dl>
 
-<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00138">138</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00142">142</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
 </div>
 </div>
@@ -3201,7 +3402,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00143">143</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00147">147</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
 </div>
 </div>
@@ -3241,7 +3442,7 @@ template&lt;int value&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_data.html" title="The main data type of the VM.">Data</a> the result of the folding process. </dd></dl>
 
-<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00179">179</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00183">183</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
 </div>
 </div>
@@ -3263,7 +3464,7 @@ template&lt;int value&gt; </div>
 <p>Only here for MIT Proto compatibility, deprecated. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>Implemented for MIT Proto compatibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00184">184</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
+<p>Definition at line <a class="el" href="hood_8cpp_source.html#l00188">188</a> of file <a class="el" href="hood_8cpp_source.html">hood.cpp</a>.</p>
 
 </div>
 </div>
