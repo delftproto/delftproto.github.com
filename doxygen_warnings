@@ -1,0 +1,12 @@
+/storage/maurice/delftproto.github.com/git/src/vm/machineextension.hpp:29: warning: More #endif's than #if's found.
+
+/storage/maurice/delftproto.github.com/git/src/vm/machine.hpp:238: warning: More #endif's than #if's found.
+
+/storage/maurice/delftproto.github.com/git/src/vm/machineextension.hpp:29: warning: More #endif's than #if's found.
+
+/storage/maurice/delftproto.github.com/git/src/vm/neighbourextension.hpp:29: warning: More #endif's than #if's found.
+
+/storage/maurice/delftproto.github.com/git/src/vm/types.hpp:55: warning: documented function `Number_infinity' was not declared or defined.
+/storage/maurice/delftproto.github.com/git/src/vm/extensions.hpp:15: warning: unable to resolve reference to `fileoverloading' for \ref command
+/storage/maurice/delftproto.github.com/git/src/vm/math.hpp:18: warning: unable to resolve reference to `fileoverloading' for \ref command
+/storage/maurice/delftproto.github.com/git/src/vm/ieee754.hpp:27: warning: unable to resolve reference to `fileoverloading' for \ref command
